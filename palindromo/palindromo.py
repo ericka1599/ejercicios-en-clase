@@ -1,12 +1,9 @@
 from collections import deque
 def es_palindromo (frase):
-	frase.lower()
-	cola = deque([])
-	pila = []
-	for let in frase:
-		pila.append (let)
-		cola.append (let)
-		if pila == cola :
-			return True
-		return False
+    pila = list(frase)
+    cola = deque([pila])
+    for i in range(len(frase)):
+       if pila.pop() != cola.popleft():
+            return False
+    return True
 
