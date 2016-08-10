@@ -1,4 +1,4 @@
-from figura import FiguraGeometrica
+from figuras import FiguraGeometrica
 
 class Cuadrado(FiguraGeometrica):
 
@@ -10,3 +10,4 @@ class Cuadrado(FiguraGeometrica):
 
 		for i in range(self.altura):
 			resultado += "* " * (self.base) + "\n"
+		return resultado
