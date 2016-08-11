@@ -1,4 +1,4 @@
-from figura import FiguraGeometrica
+from figuras import FiguraGeometrica
 
 #Un triangulo es una figura geometrica
 class Triangulo(FiguraGeometrica):
@@ -10,7 +10,10 @@ class Triangulo(FiguraGeometrica):
 		resultado = ""
 
 		for i in range(self.altura):
-			resultado += "*" * (i + 1) + "\n"
+			al = altura % 2 
+			print (al)
+			resultado += " * " * (i + 1) + "\n"
+		return resultado
 
 	def calcular_area (self):
-		super().calcular_area() / 2.0
+		return super(). calcular_area() / 2.0
