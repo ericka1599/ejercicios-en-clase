@@ -26,11 +26,17 @@ while des == True:
 			print ("Area: ", cu.calcular_area())
 			print (cu.imprimir())
 
-		else: 
+		elif de == 3: 
 			des = False
 			print ("Ok bye c:")
 
-	else:
+		else:
+			print ("Eso no era una opcion ._.")
+
+	elif elec == 2:
 
 		des = False
 		print ("Adios")
+
+	else:
+		print ("Elegi otro numero ._.")

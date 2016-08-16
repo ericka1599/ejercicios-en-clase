@@ -10,8 +10,6 @@ class Triangulo(FiguraGeometrica):
 		resultado = ""
 
 		for i in range(self.altura):
-			al = altura % 2 
-			print (al)
 			resultado += " * " * (i + 1) + "\n"
 		return resultado
 
