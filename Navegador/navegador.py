@@ -14,3 +14,5 @@ def Navegador(object):
 		return self.tabs
 
 	def cerrar_tabs (self):
+		self.tabs.pop(qui)
+		return self.tabs
